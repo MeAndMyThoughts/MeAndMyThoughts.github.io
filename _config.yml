@@ -41,6 +41,6 @@ defaults:
     values:
       tags: Other
 
-  collections:
-    tags:
+collections:
+  - tags:
       output: true
