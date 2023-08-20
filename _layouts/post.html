@@ -14,27 +14,26 @@ layout: default
       {% assign author = page.author | default: site.author %}
       {%- if author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+    </p>
+    {% if page.tags %}
+      <div class="tags">
+        {% for tag in page.tags %}
+          <a href="/tags/{{ tag }}/">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </header>
-  
-  {% if page.tags %}
-    <div class="tags">
-      {% for tag in page.tags %}
-        <a href="/tags/{{ tag }}/">{{ tag }}</a>
-      {% endfor %}
-    </div>
-  {% endif %}
-  
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
-
     {{ content }}
     {% include navlinks.html %}
     <script defer src="https://cdn.commento.io/js/commento.js"></script>
     <div id="commento"></div>
+  </div>
+
+  <div class="share-links">
+    {% include sharelinks.html %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
