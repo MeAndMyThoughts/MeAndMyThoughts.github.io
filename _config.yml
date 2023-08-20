@@ -40,7 +40,3 @@ defaults:
       type: post
     values:
       tags: Other
-
-collections:
-  - tags:
-      output: true
