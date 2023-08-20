@@ -1,5 +1,1 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+敏感而思维跳跃的人，女权主义者，码农，艺术家。我想要不为是所有的这些而感到羞愧。
